@@ -19,6 +19,7 @@ code {
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 h1 {
@@ -43,20 +44,41 @@ hr {
   padding: 0;
 }
 
-/* NAVBAR */
+.page--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
 
-.navbar {
+.page {
+  transition: transform 1s, opacity 1s;
+}
+
+/* NAVBAR */
+.navbar.invis {
+  opacity: 0;
+}
+
+.navbar.fadeIn {
+  transition: opacity 0.6s;
+}
+
+.navbar.sticky {
+  background-color: transparent;
   background: linear-gradient(
     90deg,
     rgba(44, 44, 44, 0.7) 0%,
     rgba(0, 0, 0, 0.7) 100%
   );
+  position: sticky;
+}
+
+.navbar {
+  background-color: black;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
   top: 0;
   z-index: 999;
 }
@@ -105,24 +127,23 @@ HOME PAGE
 //////////////////////////////////////// 
 */
 
-.home-page {
+.section-home {
   background-image: url("images/Home_Background.jpg");
   color: aliceblue;
   text-shadow: 2px 2px 14px black;
   background-color: gray;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 8rem;
-  margin-top: -10vh;
 }
 
-.home-page h1 {
+.section-home h1 {
   font-size: 7vh;
 }
 
-.home-page h2 {
+.section-home h2 {
   text-align: left;
 }
 
@@ -132,14 +153,14 @@ ABOUT PAGE
 ////////////////////////////////////////
 */
 
-.about-page {
+.section-about {
   color: rgb(245, 239, 239);
   background-color: rgb(37, 36, 36);
   height: auto;
   padding-bottom: 5rem;
 }
 
-.about-page img {
+.section-about img {
   height: 25%;
   width: 25%;
 }
@@ -191,7 +212,7 @@ RESUME PAGE
 //////////////////////////////////////// 
 */
 
-.resume-page {
+.section-resume {
   background-image: url("images/Resume_Background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,45 +220,12 @@ RESUME PAGE
   text-align: start;
 }
 
-.resume {
-  padding: 5rem 0;
-}
-
-.resume-page h1 {
-  text-align: center;
-}
-
-.resume-page h2 {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: gray;
-}
-
-.resume-page h3 {
-  font-size: 1.5rem;
-  color: rgb(123, 123, 221);
-}
-
-.resume-page h4 {
-  margin-bottom: 1rem;
-}
-
-.resume-page p {
-  max-width: 800px;
-  padding-right: 5rem;
-}
-
-.resume-page img {
-  height: 5vw;
-  width: 5vw;
-}
-
 .resume-line-break {
   border-top: 1vh solid rgb(0, 0, 0);
 }
 
 .resume {
+  padding: 5rem 0;
   background-color: white;
   border-radius: 20px;
 }
@@ -251,28 +239,75 @@ RESUME PAGE
   margin-bottom: 2rem;
 }
 
+.section-resume h1 {
+  text-align: center;
+}
+
+.section-resume h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: gray;
+}
+
+.section-resume h3 {
+  font-size: 1.5rem;
+  color: rgb(123, 123, 221);
+}
+
+.section-resume h4 {
+  margin-bottom: 1rem;
+}
+
+.section-resume p {
+  max-width: 800px;
+  padding-right: 5rem;
+}
+
+.resume-section img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: -2rem;
+}
+
+.ecc-logo {
+  height: 150px !important;
+  width: 150px !important;
+  margin: 0 -1.6rem !important;
+}
+
+.cff-logo {
+  background-color: black;
+  border-radius: 12px;
+  height: 50px !important;
+}
+
+.nhm-logo {
+  clip-path: circle(50px);
+}
+
 /*
 //////////////////////////////////////// 
 CONTACT PAGE 
 ////////////////////////////////////////
 */
 
-.contact-page {
+.section-contact {
   padding: 10vh;
 }
 
-.contact-page h2 {
+.section-contact h2 {
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
 }
 
-.contact-page img {
+.section-contact img {
   width: 10vh;
   height: 10vh;
 }
 
-.contact-page a {
+.section-contact a {
   color: black;
   text-decoration: none;
 }
@@ -415,7 +450,7 @@ CONTACT PAGE
   //////////////////////////////////////// 
   */
 
-  .resume-page {
+  .section-resume {
     background-image: url("images/Resume_Background.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -446,33 +481,33 @@ CONTACT PAGE
     margin-bottom: 2rem;
   }
 
-  .resume-page h1 {
+  .section-resume h1 {
     text-align: center;
   }
 
-  .resume-page h2 {
+  .section-resume h2 {
     margin-bottom: 1rem;
     text-align: center;
     color: gray;
   }
 
-  .resume-page h3 {
+  .section-resume h3 {
     font-size: 1.5rem;
     color: rgb(123, 123, 221);
   }
 
-  .resume-page h4 {
+  .section-resume h4 {
     margin-bottom: 1rem;
   }
 
-  .resume-page p {
+  .section-resume p {
     padding: 0 1rem;
   }
 
   .resume-section img {
     height: 100px;
     width: 100px;
-    margin-bottom: -3rem;
+    margin-bottom: -2rem;
   }
 
   .ecc-logo {
@@ -497,17 +532,17 @@ CONTACT PAGE
   ////////////////////////////////////////
   */
 
-  .contact-page {
+  .section-contact {
     padding: 10vh;
   }
 
-  .contact-page h2 {
+  .section-contact h2 {
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
   }
 
-  .contact-page a {
+  .section-contact a {
     color: black;
     text-decoration: none;
   }
