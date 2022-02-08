@@ -1,0 +1,22 @@
+.home-page {
+  background-image: url("../../public/images/Home_Background.jpg");
+  color: aliceblue;
+  text-shadow: 2px 2px 14px black;
+  background-color: gray;
+  height: 970px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 200px;
+  margin-top: -80px;
+}
+
+.home-page h1 {
+  font-size: 60px;
+  margin: 10px;
+}
+
+.home-page h2 {
+  margin: 10px;
+  text-align: left;
+}

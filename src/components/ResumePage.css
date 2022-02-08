@@ -1,0 +1,60 @@
+.resume-page {
+  background-image: url("../../public/images/Resume_Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px;
+  text-align: start;
+}
+
+.resume {
+  padding: 150px 0px;
+}
+
+.resume-page h1 {
+  margin-top: -50px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.resume-page h2 {
+  margin-top: 50px;
+  margin-left: 477px;
+  margin-bottom: -20px;
+  color: gray;
+}
+
+.resume-page h3 {
+  color: rgb(123, 123, 221);
+  font-size: 24px;
+}
+
+.resume-page h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-right: 200px;
+}
+
+.resume-page p {
+  margin-right: 50px;
+}
+
+.resume-page img {
+  height: 100px;
+  width: 100px;
+}
+
+.resume-line-break {
+  border-top: 7px solid rgb(0, 0, 0);
+}
+
+.resume {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.resume-section {
+  display: flex;
+  justify-content: start;
+  gap: 80px;
+  margin: 30px 300px 40px 300px;
+}
