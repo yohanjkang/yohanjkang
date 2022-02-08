@@ -76,7 +76,6 @@ hr {
   height: 100%;
   width: 80vw;
   justify-content: end;
-  margin-right: 2rem;
 }
 
 .nav-item {
@@ -161,14 +160,19 @@ ABOUT PAGE
 }
 
 .profile-desc {
+  padding-top: 2vh;
   text-align: start;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
+.skills-and-tools {
+  margin: 0 20vw;
+}
+
 .skills-tools {
-  margin: 5rem 20vw;
+  margin: 5vh 20vw;
   display: flex;
   justify-content: start;
   gap: 40%;
@@ -191,7 +195,7 @@ RESUME PAGE
   background-image: url("images/Resume_Background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10rem;
+  padding: 12vh 10rem 10rem 10rem;
   text-align: start;
 }
 
@@ -225,8 +229,8 @@ RESUME PAGE
 }
 
 .resume-page img {
-  height: 6rem;
-  width: 6rem;
+  height: 5vw;
+  width: 5vw;
 }
 
 .resume-line-break {
@@ -242,7 +246,8 @@ RESUME PAGE
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-left: 10rem;
+  margin-left: 10vw;
+  margin-right: 7vw;
   margin-bottom: 2rem;
 }
 
@@ -253,7 +258,7 @@ CONTACT PAGE
 */
 
 .contact-page {
-  padding: 8rem;
+  padding: 10vh;
 }
 
 .contact-page h2 {
@@ -263,8 +268,8 @@ CONTACT PAGE
 }
 
 .contact-page img {
-  width: 5rem;
-  height: 5rem;
+  width: 10vh;
+  height: 10vh;
 }
 
 .contact-page a {
