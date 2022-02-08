@@ -289,10 +289,10 @@ CONTACT PAGE
 }
 
 @media (max-width: 480px) {
-  h1 {
+  /* h1 {
     text-align: center;
     font-size: 2rem;
-  }
+  } */
 
   h2 {
     font-size: 1.5rem;
@@ -331,12 +331,14 @@ CONTACT PAGE
   .home-container {
     color: aliceblue;
     text-shadow: 2px 2px 14px black;
-    text-align: start;
-    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 5vw;
   }
 
   .home-container h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .home-container h2 {
@@ -423,6 +425,25 @@ CONTACT PAGE
 
   .resume {
     padding: 5rem 0;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .resume-line-break {
+    border-top: 1vh solid rgb(0, 0, 0);
+  }
+
+  .resume-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding-right: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 2rem;
   }
 
   .resume-page h1 {
@@ -444,35 +465,30 @@ CONTACT PAGE
     margin-bottom: 1rem;
   }
 
-  .resume-page img {
-    height: 20%;
-    width: 20%;
-  }
-
   .resume-page p {
     padding: 0 1rem;
   }
 
-  .resume-line-break {
-    border-top: 1vh solid rgb(0, 0, 0);
+  .resume-section img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: -3rem;
   }
 
-  .resume {
-    background-color: white;
-    border-radius: 20px;
+  .ecc-logo {
+    height: 150px !important;
+    width: 150px !important;
+    margin-bottom: -4rem !important;
   }
 
-  .resume-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 3rem;
-    padding-right: 0;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-bottom: 2rem;
+  .cff-logo {
+    background-color: black;
+    border-radius: 12px;
+    height: 50px !important;
+  }
+
+  .nhm-logo {
+    clip-path: circle(50px);
   }
 
   /*
@@ -489,11 +505,6 @@ CONTACT PAGE
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
-  }
-
-  .contact-page img {
-    width: 10vh;
-    height: 10vh;
   }
 
   .contact-page a {
