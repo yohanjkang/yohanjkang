@@ -325,18 +325,21 @@ CONTACT PAGE
 
   .home-page {
     background-image: url("images/Home_Background.jpg");
-    color: aliceblue;
-    text-shadow: 2px 2px 14px black;
-    justify-content: start;
-    text-align: start;
-    padding: 0 2rem;
+    padding: 0;
   }
 
-  .home-page h1 {
+  .home-container {
+    color: aliceblue;
+    text-shadow: 2px 2px 14px black;
+    text-align: start;
+    margin: 0 1.5rem;
+  }
+
+  .home-container h1 {
     font-size: 2rem;
   }
 
-  .home-page h2 {
+  .home-container h2 {
     font-size: 1.2rem;
   }
 
