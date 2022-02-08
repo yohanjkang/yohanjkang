@@ -23,16 +23,27 @@ html {
 
 h1 {
   text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p,
+li {
+  font-size: 1rem;
 }
 
 hr {
   display: block;
-  height: 1px;
   border: 0;
-  border-top: 7px solid rgb(255, 255, 255);
-  margin: 1em 100px;
+  border-top: 1vh solid rgb(255, 255, 255);
+  margin: 1em 5rem;
   padding: 0;
 }
+
+/* NAVBAR */
 
 .navbar {
   background: linear-gradient(
@@ -40,7 +51,7 @@ hr {
     rgba(44, 44, 44, 0.7) 0%,
     rgba(0, 0, 0, 0.7) 100%
   );
-  height: 80px;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +91,7 @@ hr {
   padding: 0rem 1rem;
   height: 100%;
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 .nav-link:hover {
@@ -88,62 +100,60 @@ hr {
   transition: all 0.2s ease-out;
 }
 
+/* 
+////////////////////////////////////////
+HOME PAGE
+//////////////////////////////////////// 
+*/
+
 .home-page {
   background-image: url("images/Home_Background.jpg");
   color: aliceblue;
   text-shadow: 2px 2px 14px black;
   background-color: gray;
-  height: 970px;
+  height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 200px;
-  margin-top: -80px;
+  padding-left: 8rem;
+  margin-top: -10vh;
 }
 
 .home-page h1 {
-  font-size: 60px;
-  margin: 10px;
+  font-size: 7vh;
 }
 
 .home-page h2 {
-  margin: 10px;
   text-align: left;
 }
 
-.about-page h1 {
-  font-size: 48px;
-}
-
-.about-page h2 {
-  margin: 0;
-  font-size: 30px;
-}
-
-.about-page p {
-  font-size: 18px;
-}
-
-.about-page li {
-  font-size: 18px;
-}
+/* 
+////////////////////////////////////////
+ABOUT PAGE 
+////////////////////////////////////////
+*/
 
 .about-page {
   color: rgb(245, 239, 239);
   background-color: rgb(37, 36, 36);
-  height: 970px;
-  /* border: 1px solid yellow; */
+  height: auto;
+  padding-bottom: 5rem;
+}
+
+.about-page img {
+  height: 25%;
+  width: 25%;
 }
 
 .about {
-  padding: 100px 0px 10px 0px;
+  padding-top: 12vh;
 }
 
 .profile {
-  margin: 50px 400px 0px 400px;
+  margin: 5vh 20vw;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 4rem;
 }
 
 .profile-picture {
@@ -154,70 +164,73 @@ hr {
   text-align: start;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 3rem;
 }
 
 .skills-tools {
-  margin: 50px 500px;
+  margin: 5rem 20vw;
   display: flex;
   justify-content: start;
-  gap: 500px;
+  gap: 40%;
   list-style-position: inside;
   text-align: start;
 }
 
 .hobbies {
-  margin: 0px 500px;
+  margin: 0 20vw;
   text-align: start;
 }
+
+/* 
+////////////////////////////////////////
+RESUME PAGE
+//////////////////////////////////////// 
+*/
 
 .resume-page {
   background-image: url("images/Resume_Background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px;
+  padding: 10rem;
   text-align: start;
 }
 
 .resume {
-  padding: 150px 0px;
+  padding: 5rem 0;
 }
 
 .resume-page h1 {
-  margin-top: -50px;
-  font-size: 40px;
   text-align: center;
 }
 
 .resume-page h2 {
-  margin-top: 50px;
-  margin-left: 477px;
-  margin-bottom: -20px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
   color: gray;
 }
 
 .resume-page h3 {
+  font-size: 1.5rem;
   color: rgb(123, 123, 221);
-  font-size: 24px;
 }
 
 .resume-page h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  margin-right: 200px;
+  margin-bottom: 1rem;
 }
 
 .resume-page p {
-  margin-right: 50px;
+  max-width: 800px;
+  padding-right: 5rem;
 }
 
 .resume-page img {
-  height: 100px;
-  width: 100px;
+  height: 6rem;
+  width: 6rem;
 }
 
 .resume-line-break {
-  border-top: 7px solid rgb(0, 0, 0);
+  border-top: 1vh solid rgb(0, 0, 0);
 }
 
 .resume {
@@ -227,28 +240,31 @@ hr {
 
 .resume-section {
   display: flex;
-  justify-content: start;
-  gap: 80px;
-  margin: 30px 300px 40px 300px;
+  justify-content: center;
+  gap: 3rem;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
 }
+
+/*
+//////////////////////////////////////// 
+CONTACT PAGE 
+////////////////////////////////////////
+*/
 
 .contact-page {
-  padding: 150px;
-}
-
-.contact-page h1 {
-  font-size: 40px;
+  padding: 8rem;
 }
 
 .contact-page h2 {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
 }
 
 .contact-page img {
-  width: 100px;
-  height: 100px;
+  width: 5rem;
+  height: 5rem;
 }
 
 .contact-page a {
@@ -256,12 +272,12 @@ hr {
   text-decoration: none;
 }
 
-.contact-page a:hover {
+.email-link:hover {
   color: rgb(118, 118, 233);
 }
 
 .email {
-  margin-top: 50px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
