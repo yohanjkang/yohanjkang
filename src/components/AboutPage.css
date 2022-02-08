@@ -1,0 +1,59 @@
+.about-page h1 {
+  font-size: 48px;
+}
+
+.about-page h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+
+li {
+  font-size: 18px;
+}
+
+.about-page {
+  color: rgb(245, 239, 239);
+  background-color: rgb(37, 36, 36);
+  height: 970px;
+  /* border: 1px solid yellow; */
+}
+
+.about {
+  padding: 100px 0px 10px 0px;
+}
+
+.profile {
+  margin: 50px 400px 0px 400px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.profile-picture {
+  border-radius: 15px;
+}
+
+.profile-desc {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills-tools {
+  margin: 50px 500px;
+  display: flex;
+  justify-content: start;
+  gap: 500px;
+  list-style-position: inside;
+  text-align: start;
+}
+
+.hobbies {
+  margin: 0px 500px;
+  text-align: start;
+}
