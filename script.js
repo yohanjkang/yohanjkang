@@ -1,6 +1,10 @@
 const navbar = document.querySelector(".navbar");
 const navHeight = navbar.getBoundingClientRect().height;
 
+////////////////////////////////////////////////////////////////
+// Navbar
+////////////////////////////////////////////////////////////////
+
 const stickyNav = (entries) => {
   const [entry] = entries;
 
