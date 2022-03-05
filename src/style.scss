@@ -44,14 +44,9 @@ $light-gray: #e9e9e9;
   scroll-behavior: smooth;
 }
 
-html {
-  height: -webkit-stretch;
-}
-
 body {
   font-family: $font;
   min-height: 100vh;
-  min-height: -webkit-stretch;
 }
 
 .navbar {
@@ -198,45 +193,19 @@ body {
 // About
 
 #about {
-  @include sectionBackground();
   background-color: #000000;
-  background-image: url("./images/account_background.png");
-  background-position: top 50% right;
   color: white;
-
-  &::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-position: inherit;
-    background-image: inherit;
-    background-size: inherit;
-    background-attachment: inherit;
-    background-repeat: inherit;
-    position: fixed;
-    top: 0;
-    z-index: -1;
-  }
 
   .section-title {
     color: white;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(255, 255, 255, 0) 15%
-    );
+    background-image: url("./images/account_background.png");
+    background-repeat: no-repeat;
+    background-position: top 50% right;
   }
 }
 
 .about-center {
   padding: 4em 1.5em;
-  background-image: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.7) 10%,
-    rgba(0, 0, 0, 0.7) 85%,
-    rgba(0, 0, 0, 1) 100%
-  );
 
   h2 {
     color: $accent-color;
@@ -275,29 +244,17 @@ body {
 // Experience
 
 #experience {
-  @include sectionBackground();
   background-color: white;
-  background-image: url("./images/office_bag_bg.png");
-  background-position: top 40% left;
 
   .section-title {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 25%
-    );
+    background-image: url("./images/office_bag_bg.png");
+    background-position: top 40% left;
+    background-repeat: no-repeat;
   }
 }
 
 .experience-center {
   padding: 4em 1.5em;
-  background-image: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.7) 10%,
-    rgba(255, 255, 255, 0.7) 85%,
-    rgba(255, 255, 255, 1) 100%
-  );
 
   .btn-container {
     display: flex;
@@ -378,28 +335,14 @@ body {
 // Projects
 
 #projects {
-  @include sectionBackground();
-  background-image: url("./images/monitor_bg.png");
-  background-position: top 50% right;
-  // background: white;
-
   .section-title {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 15%
-    );
+    background-image: url("./images/monitor_bg.png");
+    background-position: top 50% right;
+    background-repeat: no-repeat;
   }
 
   .section-center {
     padding: 4em 1.5em;
-    background-image: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.7) 10%,
-      rgba(255, 255, 255, 0.7) 85%,
-      rgba(255, 255, 255, 1) 100%
-    );
 
     @include columnFlex();
     gap: 10rem;
@@ -443,12 +386,13 @@ body {
 // Contact
 
 #contact {
-  @include sectionBackground();
   @include columnFlex();
   justify-content: flex-start;
   background-color: black;
   background-image: url("./images/message_bg.png");
   background-position: top 25% left;
+  background-repeat: no-repeat;
+
   height: 100vh;
   padding: 50% 18% 3rem;
   text-align: center;

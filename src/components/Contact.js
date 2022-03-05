@@ -1,8 +1,9 @@
 import React from "react";
+import Div100vh from "react-div-100vh";
 
 function Contact() {
   return (
-    <section className="section" id="contact">
+    <Div100vh className="section" id="contact">
       <div className="section-title">
         <h2>Contact</h2>
         <div className="underline"></div>
@@ -25,7 +26,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </Div100vh>
   );
 }
 

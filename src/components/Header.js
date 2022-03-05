@@ -1,8 +1,9 @@
 import React from "react";
+import Div100vh from "react-div-100vh";
 
 function Header(props) {
   return (
-    <header className="header">
+    <Div100vh className="header">
       <img
         className="navbar-menu-icon"
         src={require(`../images/bars.png`)}
@@ -25,7 +26,7 @@ function Header(props) {
           alt="Down Chevron Icon"
         />
       </a>
-    </header>
+    </Div100vh>
   );
 }
 
