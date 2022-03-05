@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/yohanjkang/static/css/main.93c27882.css",
+    "main.js": "/yohanjkang/static/js/main.982ebb0b.js",
+    "static/media/davinci_code.png": "/yohanjkang/static/media/davinci_code.069a3f3b1ab0d5a4313f.png",
+    "static/media/account_background.png": "/yohanjkang/static/media/account_background.b38de0cf2d7497a7c416.png",
+    "static/media/message_bg.png": "/yohanjkang/static/media/message_bg.3d6b1d3a56f84a0f2d77.png",
+    "static/media/office_bag_bg.png": "/yohanjkang/static/media/office_bag_bg.e07b9dbbc20c087b2ecc.png",
+    "static/media/monitor_bg.png": "/yohanjkang/static/media/monitor_bg.78fe58ffb6fb5ed6d038.png",
+    "static/media/coterie.png": "/yohanjkang/static/media/coterie.8e0647f834b7372f6f57.png",
+    "index.html": "/yohanjkang/index.html",
+    "main.93c27882.css.map": "/yohanjkang/static/css/main.93c27882.css.map",
+    "main.982ebb0b.js.map": "/yohanjkang/static/js/main.982ebb0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93c27882.css",
+    "static/js/main.982ebb0b.js"
+  ]
+}
