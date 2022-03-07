@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yohanjkang/static/css/main.0a20fe31.css",
-    "main.js": "/yohanjkang/static/js/main.fa2991c8.js",
+    "main.css": "/yohanjkang/static/css/main.7e6aba33.css",
+    "main.js": "/yohanjkang/static/js/main.d01fd16a.js",
     "static/media/davinci_code.png": "/yohanjkang/static/media/davinci_code.80f8aa707bbafba9cd06.png",
     "static/media/coterie.png": "/yohanjkang/static/media/coterie.fe6b5e00a0228b3ebf46.png",
     "static/media/account_background.png": "/yohanjkang/static/media/account_background.b38de0cf2d7497a7c416.png",
@@ -9,11 +9,11 @@
     "static/media/office_bag_bg.png": "/yohanjkang/static/media/office_bag_bg.e07b9dbbc20c087b2ecc.png",
     "static/media/monitor_bg.png": "/yohanjkang/static/media/monitor_bg.78fe58ffb6fb5ed6d038.png",
     "index.html": "/yohanjkang/index.html",
-    "main.0a20fe31.css.map": "/yohanjkang/static/css/main.0a20fe31.css.map",
-    "main.fa2991c8.js.map": "/yohanjkang/static/js/main.fa2991c8.js.map"
+    "main.7e6aba33.css.map": "/yohanjkang/static/css/main.7e6aba33.css.map",
+    "main.d01fd16a.js.map": "/yohanjkang/static/js/main.d01fd16a.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a20fe31.css",
-    "static/js/main.fa2991c8.js"
+    "static/css/main.7e6aba33.css",
+    "static/js/main.d01fd16a.js"
   ]
 }
