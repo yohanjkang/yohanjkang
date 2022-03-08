@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/yohanjkang/static/css/main.18e27067.css",
-    "main.js": "/yohanjkang/static/js/main.1590b07b.js",
+    "main.css": "/yohanjkang/static/css/main.68694eb2.css",
+    "main.js": "/yohanjkang/static/js/main.9570f0b8.js",
     "static/media/davinci_code.png": "/yohanjkang/static/media/davinci_code.80f8aa707bbafba9cd06.png",
+    "static/media/ECC_bg.jpg": "/yohanjkang/static/media/ECC_bg.6ccca8eba5c6fcaa967c.jpg",
+    "static/media/USC_bg.jpg": "/yohanjkang/static/media/USC_bg.bb478aa3f65375bf4e01.jpg",
+    "static/media/ECC_icon.svg": "/yohanjkang/static/media/ECC_icon.9db64fa0308a5b9ea747b02c63a6819f.svg",
     "static/media/coterie.png": "/yohanjkang/static/media/coterie.fe6b5e00a0228b3ebf46.png",
+    "static/media/USC_icon.svg": "/yohanjkang/static/media/USC_icon.39494f7f2130e353ee7a33b2a3142def.svg",
     "static/media/account_background.png": "/yohanjkang/static/media/account_background.b38de0cf2d7497a7c416.png",
     "static/media/message_bg.png": "/yohanjkang/static/media/message_bg.3d6b1d3a56f84a0f2d77.png",
     "static/media/office_bag_bg.png": "/yohanjkang/static/media/office_bag_bg.e07b9dbbc20c087b2ecc.png",
     "static/media/monitor_bg.png": "/yohanjkang/static/media/monitor_bg.78fe58ffb6fb5ed6d038.png",
     "index.html": "/yohanjkang/index.html",
-    "main.18e27067.css.map": "/yohanjkang/static/css/main.18e27067.css.map",
-    "main.1590b07b.js.map": "/yohanjkang/static/js/main.1590b07b.js.map"
+    "main.68694eb2.css.map": "/yohanjkang/static/css/main.68694eb2.css.map",
+    "main.9570f0b8.js.map": "/yohanjkang/static/js/main.9570f0b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.18e27067.css",
-    "static/js/main.1590b07b.js"
+    "static/css/main.68694eb2.css",
+    "static/js/main.9570f0b8.js"
   ]
 }
