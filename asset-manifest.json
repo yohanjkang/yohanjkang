@@ -1,24 +1,37 @@
 {
   "files": {
-    "main.css": "/yohanjkang/static/css/main.781d4f28.css",
-    "main.js": "/yohanjkang/static/js/main.f51e26e0.js",
-    "static/media/davinci_code.png": "/yohanjkang/static/media/davinci_code.80f8aa707bbafba9cd06.png",
+    "main.css": "/yohanjkang/static/css/main.7c377b84.css",
+    "main.js": "/yohanjkang/static/js/main.75917c03.js",
+    "static/media/many-lg.png": "/yohanjkang/static/media/many-lg.4308b8e12124f1b5ad49.png",
+    "static/media/many.png": "/yohanjkang/static/media/many.974f0fe3b45fc69c5610.png",
     "static/media/ECC_bg.jpg": "/yohanjkang/static/media/ECC_bg.6ccca8eba5c6fcaa967c.jpg",
     "static/media/USC_bg.jpg": "/yohanjkang/static/media/USC_bg.bb478aa3f65375bf4e01.jpg",
     "static/media/ECC_icon.svg": "/yohanjkang/static/media/ECC_icon.9db64fa0308a5b9ea747b02c63a6819f.svg",
-    "static/media/coterie.png": "/yohanjkang/static/media/coterie.fe6b5e00a0228b3ebf46.png",
+    "static/media/hero-lg.png": "/yohanjkang/static/media/hero-lg.c4672762f04eda5c32b1.png",
+    "static/media/many-mobile.png": "/yohanjkang/static/media/many-mobile.12d817d3758cb5696ae3.png",
+    "static/media/homepage.png": "/yohanjkang/static/media/homepage.b5b9cf10a67f3e76e86a.png",
+    "static/media/davinci_code.png": "/yohanjkang/static/media/davinci_code.07a4386447e9ed4694b0.png",
+    "static/media/hero-mobile.png": "/yohanjkang/static/media/hero-mobile.4665e83cd6e0224f7138.png",
+    "static/media/details_page.png": "/yohanjkang/static/media/details_page.0e8b2cc718db49cad55c.png",
+    "static/media/arcedex.png": "/yohanjkang/static/media/arcedex.b78d013d8562609da369.png",
+    "static/media/homepage-sm.png": "/yohanjkang/static/media/homepage-sm.cbb288deb0003033cca8.png",
+    "static/media/hero.png": "/yohanjkang/static/media/hero.8b996d4c4c6638865f31.png",
     "static/media/USC_icon.svg": "/yohanjkang/static/media/USC_icon.39494f7f2130e353ee7a33b2a3142def.svg",
+    "static/media/details_page-sm.png": "/yohanjkang/static/media/details_page-sm.5aaf13f0c21ca03b5e38.png",
+    "static/media/homepage-mobile.png": "/yohanjkang/static/media/homepage-mobile.7d564d87b5eb86ee8f91.png",
+    "static/media/details_page-mobile.png": "/yohanjkang/static/media/details_page-mobile.8176f14220f8e4e7416d.png",
+    "static/media/coterie.png": "/yohanjkang/static/media/coterie.7592ecd7d09ccfb8a608.png",
     "static/media/account_background.png": "/yohanjkang/static/media/account_background.b38de0cf2d7497a7c416.png",
     "static/media/message_bg.png": "/yohanjkang/static/media/message_bg.3d6b1d3a56f84a0f2d77.png",
     "static/media/office_bag_bg.png": "/yohanjkang/static/media/office_bag_bg.e07b9dbbc20c087b2ecc.png",
     "static/media/monitor_bg.png": "/yohanjkang/static/media/monitor_bg.78fe58ffb6fb5ed6d038.png",
     "static/media/Yohan_icon.svg": "/yohanjkang/static/media/Yohan_icon.acc8ce57440e0c986204cda5b938f5b1.svg",
     "index.html": "/yohanjkang/index.html",
-    "main.781d4f28.css.map": "/yohanjkang/static/css/main.781d4f28.css.map",
-    "main.f51e26e0.js.map": "/yohanjkang/static/js/main.f51e26e0.js.map"
+    "main.7c377b84.css.map": "/yohanjkang/static/css/main.7c377b84.css.map",
+    "main.75917c03.js.map": "/yohanjkang/static/js/main.75917c03.js.map"
   },
   "entrypoints": [
-    "static/css/main.781d4f28.css",
-    "static/js/main.f51e26e0.js"
+    "static/css/main.7c377b84.css",
+    "static/js/main.75917c03.js"
   ]
 }
