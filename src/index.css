@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Sora:wght@100;300;400;500;600;700&display=swap");
+
+@keyframes border-top {
+  0% {
+    transform-origin: left;
+  }
+
+  25% {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+
+  26% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform: scaleX(100%);
+    transform-origin: right;
+  }
+
+  51% {
+    transform-origin: left;
+  }
+
+  75% {
+    transform: scaleX(50%);
+  }
+}
+
+@keyframes border-left {
+  0% {
+    transform-origin: top;
+  }
+
+  25% {
+    transform-origin: top;
+    transform: scaleY(100%);
+  }
+
+  26% {
+    transform-origin: bottom;
+  }
+
+  50% {
+    transform-origin: bottom;
+    transform: scaleY(0%);
+  }
+}
+
+@keyframes border-bottom {
+  0% {
+    transform-origin: right;
+  }
+
+  25% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+
+  26% {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform: scaleX(100%);
+    transform-origin: left;
+  }
+
+  51% {
+    transform-origin: right;
+  }
+
+  75% {
+    transform: scaleX(50%);
+  }
+}
+
+@keyframes border-right {
+  0% {
+    transform-origin: bottom;
+  }
+
+  25% {
+    transform-origin: bottom;
+    transform: scaleY(100%);
+  }
+
+  26% {
+    transform-origin: top;
+  }
+
+  50% {
+    transform-origin: top;
+    transform: scaleY(0%);
+  }
+
+  100% {
+    transform-origin: top;
+  }
+}
+
+@keyframes border-left {
+  0% {
+    transform-origin: top;
+  }
+
+  25% {
+    transform-origin: top;
+    transform: scaleY(100%);
+  }
+
+  26% {
+    transform-origin: bottom;
+  }
+
+  50% {
+    transform-origin: bottom;
+    transform: scaleY(0%);
+  }
+}
+
+@keyframes border-right {
+  0% {
+    transform-origin: bottom;
+  }
+
+  25% {
+    transform-origin: bottom;
+    transform: scaleY(100%);
+  }
+
+  26% {
+    transform-origin: top;
+  }
+
+  50% {
+    transform-origin: top;
+    transform: scaleY(0%);
+  }
+
+  100% {
+    transform-origin: top;
+  }
+}
+
+body {
+  font-family: "Sora";
+}
+
+/* HEADER */
+.header-line.top {
+  transform-origin: left;
+  transform: scaleX(50%);
+}
+
+.header-line.bottom {
+  transform-origin: right;
+  transform: scaleX(50%);
+}
+
+.header-line.left {
+  transform: scaleY(0%);
+}
+
+.header-line.right {
+  transform: scaleY(0%);
+}
+
+.parent.hovered .header-line.top {
+  animation: border-top 2.5s ease;
+}
+
+.parent.hovered .header-line.bottom {
+  animation: border-bottom 2.5s ease;
+}
+
+.parent.hovered .header-line.left {
+  animation: border-left 2.5s ease;
+}
+
+.parent.hovered .header-line.right {
+  animation: border-right 2.5s ease;
+}
