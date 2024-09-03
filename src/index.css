@@ -5,6 +5,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Sora:wght@100;300;400;500;600;700&display=swap");
 
+@keyframes bounce-up {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
 @keyframes border-top {
   0% {
     transform-origin: left;
@@ -151,8 +163,17 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Sora";
+}
+
+/* ARROW */
+.top-of-page-arrow:hover {
+  animation: bounce-up 1s infinite;
 }
 
 /* HEADER */
@@ -174,18 +195,18 @@ body {
   transform: scaleY(0%);
 }
 
-.parent.hovered .header-line.top {
+.home-parent.hovered .header-line.top {
   animation: border-top 2.5s ease;
 }
 
-.parent.hovered .header-line.bottom {
+.home-parent.hovered .header-line.bottom {
   animation: border-bottom 2.5s ease;
 }
 
-.parent.hovered .header-line.left {
+.home-parent.hovered .header-line.left {
   animation: border-left 2.5s ease;
 }
 
-.parent.hovered .header-line.right {
+.home-parent.hovered .header-line.right {
   animation: border-right 2.5s ease;
 }
