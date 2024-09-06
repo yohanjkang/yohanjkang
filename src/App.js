@@ -1,8 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
+import Experience from "./components/Experience/Experience";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects";
@@ -45,10 +44,10 @@ function App() {
         <Home theme={theme} />
       </div>
       <div ref={aboutRef}>
-        <About />
+        <About theme={theme} />
       </div>
       <div ref={experienceRef}>
-        <Experience />
+        <Experience theme={theme} />
       </div>
       <div ref={projectsRef}>
         <Projects />

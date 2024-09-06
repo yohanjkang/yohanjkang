@@ -1,11 +1,4 @@
-import config from "../../config";
-import {
-  FaHouse,
-  FaUser,
-  FaBriefcase,
-  FaDisplay,
-  FaEnvelope,
-} from "react-icons/fa6";
+import NavbarItem from "./NavbarItem";
 
 const Navbar = ({
   theme,
@@ -15,15 +8,13 @@ const Navbar = ({
   isProjectsVisible,
   isContactVisible,
 }) => {
-  const accentColor = config.accentColor;
-  const black = "#ffffff";
-
-  const navLinkClass =
-    "flex flex-col items-center px-6 pt-4 pb-3 mx-4 cursor-default transition-all " +
-    "border-b-[3px] border-transparent hover:border-accent hover:-translate-y-1";
-  const navLinkActiveClass =
-    "flex flex-col items-center px-6 pt-4 pb-3 mx-4 cursor-default " +
-    "transition-all border-b-[3px] border-accent -translate-y-1";
+  const navbarItems = [
+    { id: "home", label: "Home", isVisible: isHomeVisible },
+    { id: "about", label: "About", isVisible: isAboutVisible },
+    { id: "experience", label: "Experience", isVisible: isExperienceVisible },
+    { id: "projects", label: "Projects", isVisible: isProjectsVisible },
+    { id: "contact", label: "Contact", isVisible: isContactVisible },
+  ];
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -33,83 +24,23 @@ const Navbar = ({
   };
 
   return (
-    <nav data-theme={theme} className="bg-primary w-full pt-2 fixed">
+    <nav
+      data-theme={theme}
+      className="bg-primary opacity-100 w-full pt-2 fixed z-10"
+    >
       <ul className="flex font-semibold justify-end">
-        <li
-          className={isHomeVisible ? navLinkActiveClass : navLinkClass}
-          onClick={() => scrollToSection("home")}
-        >
-          {/* <FaHouse color={isHomeVisible ? accentColor : black} size={20} /> */}
-          <p
-            className={
-              isHomeVisible
-                ? "transition-colors text-accent"
-                : "transition-colors text-text-primary"
-            }
-          >
-            Home
-          </p>
-        </li>
-        <li
-          className={isAboutVisible ? navLinkActiveClass : navLinkClass}
-          onClick={() => scrollToSection("about")}
-        >
-          {/* <FaUser size={20} /> */}
-          <p
-            className={
-              isAboutVisible
-                ? "transition-colors text-accent"
-                : "transition-colors text-text-primary"
-            }
-          >
-            About
-          </p>
-        </li>
-        <li
-          className={isExperienceVisible ? navLinkActiveClass : navLinkClass}
-          onClick={() => scrollToSection("experience")}
-        >
-          {/* <FaBriefcase size={20} /> */}
-          <p
-            className={
-              isExperienceVisible
-                ? "transition-colors text-accent"
-                : "transition-colors text-text-primary"
-            }
-          >
-            Experience
-          </p>
-        </li>
-        <li
-          className={isProjectsVisible ? navLinkActiveClass : navLinkClass}
-          onClick={() => scrollToSection("projects")}
-        >
-          {/* <FaDisplay size={20} /> */}
-          <p
-            className={
-              isProjectsVisible
-                ? "transition-colors text-accent"
-                : "transition-colors text-text-primary"
-            }
-          >
-            Projects
-          </p>
-        </li>
-        <li
-          className={isContactVisible ? navLinkActiveClass : navLinkClass}
-          onClick={() => scrollToSection("contact")}
-        >
-          {/* <FaEnvelope size={20} /> */}
-          <p
-            className={
-              isContactVisible
-                ? "transition-colors text-accent"
-                : "transition-colors text-text-primary"
-            }
-          >
-            Contact
-          </p>
-        </li>
+        {navbarItems.map(({ id, label, isVisible }) => {
+          return (
+            <NavbarItem
+              key={id}
+              id={id}
+              label={label}
+              isVisible={isVisible}
+              onClick={() => scrollToSection(id)}
+              theme={theme}
+            />
+          );
+        })}
       </ul>
     </nav>
   );

@@ -1,54 +1,49 @@
 import React from "react";
 
-const About = () => {
+const About = ({ theme }) => {
   return (
-    <section className="h-[100vh] bg-black" id="about">
-      <div className="">
-        <h2>About Me</h2>
-        <div className=""></div>
-      </div>
-      <div className="">
+    <section
+      data-theme={theme}
+      className="bg-black h-[100vh] w-full flex flex-col items-center text-text-primary"
+      id="about"
+    >
+      <div className="w-[70%] flex flex-col">
+        <h2 className="text-center">About Me</h2>
         <div className="">
-          <h2>Here's a little about my story</h2>
+          <h1>Here's a little about me</h1>
           <p>
-            Hey there! My name is Yohan and I like to create things through
-            code.
+            Hey there! My name is Yohan and I'm a sofware developer based on LA.
+            I've been delving into the world of coding since 2019. Currently,
+            I'm employed at Playbook3D where I worked on various projects using
+            tools like Unity3D, React, and Blender.
           </p>
-          <br />
           <p>
-            I'm a bit of a late bloomer when it comes to coding. I didn't write
-            my first "Hello, World!" until I was 19! Despite this late start,
-            I've been able to sharpen my skills throughout the years thanks to
-            incredibly helpful professors and peers and the wonderful world of
-            free online tutorials.
-          </p>
-          <br />
-          <p>
-            I recently graduated at the University of Southern California (USC)
-            where I received a B.S. in Computer Science. At USC, I dived deeply
-            into the worlds of video game programming and frontend development.
-            I’m currently furthering my skills in VR and Unity game development.
+            Outside of programming, I enjoy playing drums and guitar, working
+            out, learning Japanese, and playing whatever PC games my friends and
+            I can find on Steam.
           </p>
         </div>
         <div className="">
           <h2>Some of my skills</h2>
-          <p>
-            Here are some of the skills I picked up throughout my academic
-            career or while trying to expand my toolset during my free time:
-          </p>
-          <div className="">
-            <li className="">JavaScript</li>
-            <li className="">React</li>
-            <li className="">React Native</li>
-            <li className="">Node.js</li>
-            <li className="">HTML</li>
-            <li className="">CSS</li>
-            <li className="">Sass</li>
+          <p>Here are some of the skills I've picked up:</p>
+          <ul className="">
             <li className="">C#</li>
             <li className="">Python</li>
-            <li className="">C/C++</li>
-            <li className="">Java</li>
-            <li className="">SQL</li>
+            <li className="">JavaScript</li>
+            <li className="">TypeScript</li>
+            <li className="">React</li>
+            <li className="">React Native</li>
+            <li className="">HTML</li>
+            <li className="">CSS</li>
+            <li className="">Tailwind CSS</li>
+          </ul>
+          <div>
+            <p>I can also speak these languages:</p>
+            <ul>
+              <li>Korean</li>
+              <li>Spanish</li>
+              <li>Japanese</li>
+            </ul>
           </div>
         </div>
       </div>

@@ -20,9 +20,11 @@ export const plugins = [
     },
     dark: {
       primary: "#000000",
-      secondary: "#ffffff",
+      secondary: "#f0f0f0",
       accent: "#59acb5",
-      "text-primary": "#ffffff",
+      "text-primary": "#f0f0f0",
+      "text-secondary": "#000000",
+      "text-soft": "#d4d4d4",
     },
   }),
 ];
