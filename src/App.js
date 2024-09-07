@@ -9,37 +9,57 @@ import Projects from "./components/Projects";
 function App() {
   const theme = "dark";
 
-  const [homeRef, homeInView] = useInView({
-    threshold: 0.5,
+  // Logic to highlight the appropriate NavbarItem when the user scrolls to each section
+  const threshold = Array.from({ length: 21 }, (_, i) => i * 0.05);
+
+  const { ref: homeRef, entry: homeEntry } = useInView({
+    threshold: threshold,
     triggerOnce: false,
   });
-  const [aboutRef, aboutInView] = useInView({
-    threshold: 0.5,
+  const { ref: aboutRef, entry: aboutEntry } = useInView({
+    threshold: threshold,
     triggerOnce: false,
   });
-  const [experienceRef, experienceInView] = useInView({
-    threshold: 0.5,
+  const { ref: experienceRef, entry: experienceEntry } = useInView({
+    threshold: threshold,
     triggerOnce: false,
   });
-  const [projectsRef, projectsInView] = useInView({
-    threshold: 0.5,
+  const { ref: projectsRef, entry: projectsEntry } = useInView({
+    threshold: threshold,
     triggerOnce: false,
   });
-  const [contactRef, contactInView] = useInView({
-    threshold: 0.5,
+  const { ref: contactRef, entry: contactEntry } = useInView({
+    threshold: threshold,
     triggerOnce: false,
   });
 
+  const visibilityData = [
+    {
+      id: "Home",
+      visibility: homeEntry ? homeEntry.intersectionRatio : 0,
+    },
+    { id: "About", visibility: aboutEntry ? aboutEntry.intersectionRatio : 0 },
+    {
+      id: "Experience",
+      visibility: experienceEntry ? experienceEntry.intersectionRatio : 0,
+    },
+    {
+      id: "Projects",
+      visibility: projectsEntry ? projectsEntry.intersectionRatio : 0,
+    },
+    {
+      id: "Contact",
+      visibility: contactEntry ? contactEntry.intersectionRatio : 0,
+    },
+  ];
+
+  const mostVisibleSection = visibilityData.reduce((max, section) =>
+    section.visibility > max.visibility ? section : max
+  );
+
   return (
     <>
-      <Navbar
-        theme={theme}
-        isHomeVisible={homeInView}
-        isAboutVisible={aboutInView}
-        isExperienceVisible={experienceInView}
-        isProjectsVisible={projectsInView}
-        isContactVisible={contactInView}
-      />
+      <Navbar theme={theme} mostVisibleSection={mostVisibleSection.id} />
       <div ref={homeRef}>
         <Home theme={theme} />
       </div>

@@ -23,7 +23,7 @@ const Home = ({ theme }) => {
           onAnimationEnd={() => setHovered(false)}
         >
           <div className="px-5 space-y-2">
-            <h1 className="text-text-primary text-4xl tracking-wide">
+            <h1 className="text-text-primary text-4xl font-bold tracking-wide">
               Hey! I'm <span className="text-accent">Yohan</span>
             </h1>
             <p className="text-text-primary text-xl">

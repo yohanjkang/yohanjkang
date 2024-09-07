@@ -1,19 +1,24 @@
 import NavbarItem from "./NavbarItem";
 
-const Navbar = ({
-  theme,
-  isHomeVisible,
-  isAboutVisible,
-  isExperienceVisible,
-  isProjectsVisible,
-  isContactVisible,
-}) => {
+const Navbar = ({ theme, mostVisibleSection }) => {
   const navbarItems = [
-    { id: "home", label: "Home", isVisible: isHomeVisible },
-    { id: "about", label: "About", isVisible: isAboutVisible },
-    { id: "experience", label: "Experience", isVisible: isExperienceVisible },
-    { id: "projects", label: "Projects", isVisible: isProjectsVisible },
-    { id: "contact", label: "Contact", isVisible: isContactVisible },
+    { id: "home", label: "Home", isVisible: mostVisibleSection === "Home" },
+    { id: "about", label: "About", isVisible: mostVisibleSection === "About" },
+    {
+      id: "experience",
+      label: "Experience",
+      isVisible: mostVisibleSection === "Experience",
+    },
+    {
+      id: "projects",
+      label: "Projects",
+      isVisible: mostVisibleSection === "Projects",
+    },
+    {
+      id: "contact",
+      label: "Contact",
+      isVisible: mostVisibleSection === "Contact",
+    },
   ];
 
   const scrollToSection = (id) => {

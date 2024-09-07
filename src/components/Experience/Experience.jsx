@@ -60,8 +60,9 @@ const Experience = ({ theme }) => {
       id="experience"
     >
       <div className="flex flex-row mx-auto justify-between w-[60%]">
+        <div className="w-1/6"></div>
         {/* Experience */}
-        <div className="relative flex-auto w-3/4">
+        <div className="relative flex-auto w-2/4">
           <h1 className="text-2xl font-bold mb-3">Professional Experience</h1>
           <div className="w-3/4">
             {experienceData.map(
@@ -81,8 +82,8 @@ const Experience = ({ theme }) => {
           </div>
         </div>
         {/* Education */}
-        <div className="flex-auto w-1/4">
-          <h1 className="text-2xl font-bold mb-3">Education</h1>
+        <div className="flex-auto w-1/6">
+          <h1 className="text-xl font-bold mb-3">Education</h1>
           {educationData.map(({ institution, degree, timeFrame }) => {
             return (
               <EducationItem

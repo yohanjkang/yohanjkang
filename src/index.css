@@ -177,11 +177,6 @@ body {
   font-family: "Sora";
 }
 
-/* ARROW */
-.top-of-page-arrow:hover {
-  animation: bounce-up 1s infinite;
-}
-
 /* HEADER */
 .header-line.top {
   transform-origin: left;

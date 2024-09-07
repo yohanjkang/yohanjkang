@@ -19,7 +19,7 @@ export const plugins = [
       "text-primary": "#000000",
     },
     dark: {
-      primary: "#000000",
+      primary: "#1c1c1c",
       secondary: "#f0f0f0",
       accent: "#59acb5",
       "text-primary": "#f0f0f0",
